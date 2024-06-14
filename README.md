@@ -26,4 +26,4 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
   <version>VERSION</version>
 </dependency>
 ```
-[latest release](https://github.com/ItsHarshXD/matrixgliders/packages/)/packages?ecosystem=maven)
+[latest release](https://github.com/ItsHarshXD/matrixgliders/packages/packages?ecosystem=maven)
