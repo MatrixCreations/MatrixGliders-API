@@ -6,10 +6,12 @@ MatrixGliders is a Minecraft plugin that enhances gameplay by introducing custom
 JavaDocs: https://javadocs.com
 Documentation: https://documentation.com
 
+![GitHub Release](https://img.shields.io/github/v/release/ItsHarshXD/MatrixGliders-API?display_name=release&label=API%20Version&labelColor=%234CDB44&color=DB7B44)
+
 ## Integrate MatrixGliders API
 To use MatrixGliders in your project implement MatrixGliders dependency into your Maven/Gradle project.
 
-### Maven Integration
+## Maven Integration
 1. Add this in your repository section.
 ```xml
 <repository>
@@ -18,7 +20,9 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
 </repository>
 ```
 
-2. Add this in your dependency section.
+2. Add this in your dependency section
+
+Replace "**VERSION**" with latest release version given up.
 ```xml
 <dependency>
   <groupId>org.itsharshxd</groupId>
@@ -26,4 +30,40 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
   <version>VERSION</version>
 </dependency>
 ```
-[latest release](https://github.com/ItsHarshXD/matrixgliders/packages?ecosystem=maven)
+
+## __API Overview__
+
+**API Events**
+1. **PlayerGlideEvent** - Triggers when any player is in gliding state.
+
+```java
+@EventHandler
+public void whilePlayerGlide(PlayerGlideEvent event) {
+  List<Player> players = event.getPlayers();
+  // Do something
+}
+```
+
+2. **GlidingStartEvent** - Triggers when any player starts gliding.
+
+```java
+@EventHandler
+public void glidingStartEvent(GlidingStartEvent event) {
+  Player player = event.getPlayer();
+  // Do something
+}
+```
+
+3. **GlidingEndEvent** - Triggers when any player stops gliding.
+
+```java
+@EventHandler
+public void glidingEndEvent(GlidingEndEvent event) {
+  Player player = event.getPlayer();
+  // Get the cause, which led the player to stop gliding! It can be either "LANDING" or "DISCONNECT".
+  Cause cause = event.getCause();
+  if(cause.equals(Cause.DISCONNECT)) {
+    // Do something
+  }
+}
+```
