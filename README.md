@@ -4,6 +4,7 @@
 MatrixGliders is a Minecraft plugin that enhances gameplay by introducing customizable gliders for players. It features an intuitive GUI for managing and equipping gliders, seamless PlaceholderAPI integration for displaying player statistics, and robust permissions for command management. The plugin also supports custom model data, and integrates with ItemsAdder and Oraxen for even more customization options. Perfect for adding a new dimension of fun and functionality to your Minecraft server!
 
 JavaDocs: https://javadocs.com
+
 Documentation: https://documentation.com
 
 ![GitHub Release](https://img.shields.io/github/v/release/ItsHarshXD/MatrixGliders-API?display_name=release&label=API%20Version&labelColor=%234CDB44&color=DB7B44)
@@ -22,7 +23,9 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
 
 2. Add this in your dependency section
 
-Replace "**VERSION**" with latest release version given up.
+> [!CAUTION]
+> Replace "**VERSION**" with latest release version given up.
+
 ```xml
 <dependency>
   <groupId>org.itsharshxd</groupId>
@@ -33,7 +36,7 @@ Replace "**VERSION**" with latest release version given up.
 
 ## __API Overview__
 
-**API Events**
+### API Events
 1. **PlayerGlideEvent** - Triggers when any player is in gliding state.
 
 ```java
@@ -66,4 +69,21 @@ public void glidingEndEvent(GlidingEndEvent event) {
     // Do something
   }
 }
+```
+
+### API Methods:
+```java
+void startGlide(Player player) //Starts gliding for the specified player
+void stopGlide(Player player, Cause cause) //Stops gliding for the specified player
+boolean isGliding(Player player) //Checks if the player is currently gliding
+void addGliderToPlayer(Player player, String gliderID) //Adds a glider to the specified player
+void removeGliderFromPlayer(Player player, String gliderID) //Removes a glider from the specified player
+boolean hasGliderEquipped(Player player) //Checks if the specified player has a glider equipped
+void wearEquippedGlider(Player player) //Equips the glider for the specified player
+void equipGliderToConfig(Player player, String gliderID) //Equips a glider to the config for the specified player
+void disrobeEquippedGlider(Player player) //Disrobes the equipped glider for the specified player
+void unequipGliderFromConfig(Player player) //Unequips a glider from the config for the specified player
+boolean isValidGliderID(String gliderID) //Checks if the specified glider ID is valid
+List<String> getTotalGliders() //Gets the list of all gliders
+List<String> getPlayerGliders(Player player) //Gets the list of gliders for the specified player
 ```
