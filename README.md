@@ -6,7 +6,7 @@ MatrixGliders is a Minecraft plugin that enhances gameplay by introducing custom
 JavaDocs: https://itsharshxd.github.io/MatrixGliders-API/index.html \
 Documentation: https://github.com/ItsHarshXD/MatrixGliders-API/wiki
 
-![GitHub Release](https://img.shields.io/github/v/release/ItsHarshXD/MatrixGliders-API?display_name=release&label=API%20Version&labelColor=%234CDB44&color=DB7B44)
+![GitHub Release](https://img.shields.io/github/v/release/ItsHarshXD/MatrixGliders-API?display_name=release&label=API%20Version)
 
 ## Integrate MatrixGliders API
 To use MatrixGliders in your project implement MatrixGliders dependency into your Maven/Gradle project.
