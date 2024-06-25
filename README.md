@@ -33,6 +33,26 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
 </dependency>
 ```
 
+## Gradle Integration
+1. Add this in your repository section.
+```gradle
+repositories {
+  mavenCentral()
+  maven { url 'https://jitpack.io' }
+}
+```
+
+2. Add this in your dependency section
+
+> [!CAUTION]
+> Replace "**VERSION**" with latest release version given up.
+
+```gradle
+dependencies {
+  implementation 'com.github.ItsHarshXD:MatrixGliders-API:Tag'
+}
+```
+
 ## __API Overview__
 
 ### API Events
