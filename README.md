@@ -34,22 +34,30 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
 ```
 
 ## Gradle Integration
-1. Add this in your repository section.
+1. Add this in your repository section. (Gradle intergration is a bit messy! You need GitHub secret key to use this.)
 ```gradle
 repositories {
-  mavenCentral()
-  maven { url 'https://jitpack.io' }
+    mavenCentral()
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/ItsHarshXD/MatrixGliders-Repo")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
+        }
+    }
 }
 ```
 
 2. Add this in your dependency section
 
 > [!CAUTION]
-> Replace "**VERSION**" with latest release version given up.
+> Replace "**VERSION**" with latest release version given up. (Don't include "v")
 
 ```gradle
 dependencies {
-  implementation 'com.github.ItsHarshXD:MatrixGliders-API:Tag'
+    implementation 'org.itsharshxd:matrixgliders:VERSION'
 }
 ```
 
