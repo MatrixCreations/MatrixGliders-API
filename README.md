@@ -40,7 +40,7 @@ repositories {
     mavenCentral()
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/ItsHarshXD/MatrixGliders-Repo")
+            url = uri("https://maven.pkg.github.com/ItsHarshXD/MatrixGliders-API")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
                 password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
