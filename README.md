@@ -113,4 +113,6 @@ void unequipGliderFromConfig(Player player) //Unequips a glider from the config 
 boolean isValidGliderID(String gliderID) //Checks if the specified glider ID is valid
 List<String> getTotalGliders() //Gets the list of all gliders
 List<String> getPlayerGliders(Player player) //Gets the list of gliders for the specified player
+Sound getGliderSound(String gliderID) //Gets sound string for the specified glider
+void playSound(Player player) //Plays the sound which is associated with the glider if any
 ```
