@@ -8,9 +8,6 @@ Documentation: https://github.com/ItsHarshXD/MatrixGliders-API/wiki
 
 ![GitHub Release](https://img.shields.io/github/v/release/ItsHarshXD/MatrixGliders-API?display_name=release&label=API%20Version)
 
-> [!CAUTION]
-> MatrixGliders API is in heavy development, and will not function as it should be! We need contributions towards the project to fix the API.
-
 ## Integrate MatrixGliders API
 To use MatrixGliders in your project implement MatrixGliders dependency into your Maven/Gradle project.
 
