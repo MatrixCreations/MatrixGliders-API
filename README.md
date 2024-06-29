@@ -30,6 +30,7 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
   <groupId>org.itsharshxd</groupId>
   <artifactId>matrixgliders</artifactId>
   <version>VERSION</version>
+  <scope>provided</scope>
 </dependency>
 ```
 
@@ -57,7 +58,7 @@ repositories {
 
 ```gradle
 dependencies {
-    implementation 'org.itsharshxd:matrixgliders:VERSION'
+    compileOnly 'org.itsharshxd:matrixgliders:VERSION'
 }
 ```
 
