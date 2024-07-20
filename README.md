@@ -9,18 +9,13 @@ Documentation: https://github.com/ItsHarshXD/MatrixGliders-API/wiki
 ![GitHub Release](https://img.shields.io/github/v/release/ItsHarshXD/MatrixGliders-API?display_name=release&label=API%20Version)
 
 ## Integrate MatrixGliders API
+> [!CAUTION]
+> You need to have the latest version of the MatrixGliders JAR file for it to work properly.
+
 To use MatrixGliders in your project implement MatrixGliders dependency into your Maven/Gradle project.
 
 ## Maven Integration
-1. Add this in your repository section.
-```xml
-<repository>
-    <id>jitpack-repo</id>
-    <url>https://jitpack.io</url>
-</repository>
-```
-
-2. Add this in your dependency section
+1. Add this in your dependency section
 
 > [!CAUTION]
 > Replace "**VERSION**" with latest release version given up.
@@ -30,35 +25,20 @@ To use MatrixGliders in your project implement MatrixGliders dependency into you
   <groupId>org.itsharshxd</groupId>
   <artifactId>matrixgliders</artifactId>
   <version>VERSION</version>
-  <scope>provided</scope>
+  <scope>system</scope>
+  <systemPath>PATH_TO_THE_PLUGIN_JAR_WITHOUT_SPACE</systemPath>
 </dependency>
 ```
 
 ## Gradle Integration
-1. Add this in your repository section. (Gradle intergration is a bit messy! You need GitHub secret key to use this.)
-```gradle
-repositories {
-    mavenCentral()
-    repositories {
-        maven {
-            url = uri("https://maven.pkg.github.com/ItsHarshXD/MatrixGliders-API")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
-            }
-        }
-    }
-}
-```
-
-2. Add this in your dependency section
+1. Add this in your dependency section
 
 > [!CAUTION]
 > Replace "**VERSION**" with latest release version given up. (Don't include "v")
 
 ```gradle
 dependencies {
-    compileOnly 'org.itsharshxd:matrixgliders:VERSION'
+    compileOnly files('PATH_TO_THE_PLUGIN_JAR_WITHOUT_SPACE')
 }
 ```
 
