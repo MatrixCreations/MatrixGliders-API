@@ -4,9 +4,9 @@
 MatrixGliders is a Minecraft plugin that enhances gameplay by introducing customizable gliders for players. It features an intuitive GUI for managing and equipping gliders, seamless PlaceholderAPI integration for displaying player statistics, and robust permissions for command management. The plugin also supports custom model data, and integrates with ItemsAdder and Oraxen for even more customization options. Perfect for adding a new dimension of fun and functionality to your Minecraft server!
 
 JavaDocs: https://itsharshxd.github.io/MatrixGliders-API/index.html \
-Documentation: https://github.com/ItsHarshXD/MatrixGliders-API/wiki
+Documentation: https://github.com/MatrixCreations/MatrixGliders-API/wiki
 
-![GitHub Release](https://img.shields.io/github/v/release/ItsHarshXD/MatrixGliders-API?display_name=release&label=API%20Version)
+![GitHub Release](https://img.shields.io/github/v/release/MatrixCreations/MatrixGliders-API?display_name=release&label=API%20Version)
 
 ## Integrate MatrixGliders API
 > [!CAUTION]
